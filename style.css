@@ -1,0 +1,674 @@
+    *, html, body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Helvetica;
+        scroll-behavior: smooth;
+    }
+
+    header { 
+        background: rgb(157, 159, 193);
+        color: rgb(20, 1, 4);
+        display: flex;
+        width: 100%;
+    }
+        
+    .santika {
+        font-size: 20px;
+        margin-top: 5px;
+        padding: 10px;
+        font-style: italic;
+        text-decoration: none;
+        cursor: default;
+        width: 216;
+    }   
+
+    nav ul {
+        display: flex;
+        padding-left: 10px;
+        border: #222;
+
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    nav li a {
+        transition: all .3s ease 0s;
+        text-decoration: none ;
+        display: inline-table;
+        width: 100px;
+        text-align: center; 
+        padding: 8px;
+        margin: 10 1 10 10;
+        color: rgb(244, 245, 247);
+
+    }
+
+
+    li a:hover {
+        color: blue;
+    }
+
+    .logo {
+        display: flex;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+        position: relative;
+        transition: all,1s ease 0s;
+    }
+
+    .logo-title {
+
+        margin-top:20px ;
+        font-size: 25;
+    }
+
+    .logo-img{
+        width: 50px;
+        height: 50px;
+        margin: 15px 5px 5px 5px ;
+        
+    }
+
+    .title{
+        position: relative;
+        font-size: 100px;
+        max-width: 200;
+        padding: 100;
+        font-weight: 900;
+    }
+
+    .title-1 {
+        font-size: 20;
+        font-weight: 900;
+        margin: 100 10 100 160;
+        display: inline-block;
+        background: #eaeaea;
+        border-radius: 80;
+        padding :10 10 10 10 ;
+
+    }
+
+
+    .img-foto {
+        height: 200px;
+        margin-left: 150px;
+        margin-top: 50;
+        margin-right: 100;
+        margin-bottom: 200px;
+        width: auto;
+
+    }
+
+    .container{
+        background-color: rgb(132, 143, 145);
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        height: 554;
+        background-image: url(assets/foto/2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container1{
+        background-color: rgb(132, 143, 145);
+        width: 100%;
+        height: 950;
+        background-image: url(assets/foto/2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container .text-box{
+        position: relative;
+        max-width: 600;
+
+    }
+
+    .container .text-box h1 {
+        color: rgb(0, 64, 255);
+        font-style: oblique;
+        font-size: 50px;
+        font-weight: 1000;
+        text-transform: uppercase;
+        margin-top: 130;
+        cursor: default;
+    }
+
+    .container .text-box p{
+        color: rgb(255, 0, 0);
+        margin-left: 5;
+        cursor: default;
+        font-size: 20;
+        font-weight: 1000;
+    }
+
+    .container .text-box a {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 5;
+        padding: 8px 20px;
+        background: white;
+        color: rgb(2, 22, 237);
+        border-radius: 200px;
+        font-weight: 1000;
+        text-decoration: none;
+    }
+
+    .container .text-box a:hover{
+        color: black;
+        transform: translateY(10%)
+    }
+
+    .thumb {
+        position: absolute;
+        transform: translateY(-50%);
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 950;
+        padding-bottom: 50;
+        gap: 0px;
+    }
+
+    .thumb img{
+        max-width: 30px;
+    }
+
+    .thumb li a{
+        display: inline-block;
+        filter: invert(0);
+        margin: 5px 0;
+        transform: scale(0.8);
+    }
+
+    .thumb li a:hover{
+        transform: translateX(1%);
+        transition: 0,1;
+    }
+
+    .parallax {
+        background-color: rgb(132, 143, 145);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        max-width: 5000;
+
+    }
+    
+    .tentang {
+        background: rgb(235, 230, 222);
+        width: 1000%;
+        display: inline-block;
+        padding: 100;
+
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        padding: 20;
+    }
+
+    .card1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 30px;
+        padding: 0;
+        margin-left: 100;
+    }
+
+    .card-item {
+        text-align: center;
+        width: 25%;
+        min-height: 320;
+        max-height: 300px;
+        background: #f7f7f7;
+        color: #222;
+        padding: 24px;
+        box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+        margin: 10 10 10 10;
+    }
+
+    .card-item1 {
+        text-align: center;
+        width: 30%;
+        height: 300;
+        background: #f7f7f7;
+        color: #222;
+        padding: 25px;
+        box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+        margin: 100 0 0 0;
+    }
+
+    .card-item1 a{
+        cursor: pointer;
+        background-color: rgb(21, 0, 255);
+        padding: 15px ;
+        color: wheat;
+        border-radius: 30%;
+        font-size: 15;
+        text-decoration: none;
+    }
+
+    .card-item1 a:hover{
+        color: yellow;
+        transform: translate(1%);
+        background-color: black;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .card-description {
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 500;
+        margin-bottom: 15;
+    }
+
+    .card-description1{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 20;
+        font-weight: 500;
+    }
+
+    .parallax .tentang p{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .icon{
+        height: 200 ;
+    }
+
+    .card-item a{
+        cursor: pointer;
+        background-color: rgb(21, 0, 255);
+        padding: 15px  ;
+        color: wheat;
+        border-radius: 30%;
+        font-size: 15;
+        text-decoration: none;
+        margin: 10 0 0 0;
+
+
+
+    }
+    .card-item a:hover{
+        color: yellow;
+        transform: translate(1%);
+        background-color: black;
+    }
+
+    .produk-deskripsi {
+        background-color: white;
+    }
+
+    .produk-deskripsi h1{
+        font-size: 40;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        background-color: rgb(60, 0, 255) ;
+        font-style: oblique;
+    }
+
+    .header-qurban {
+        font-size: 30;  
+        width: 0;
+        color: rgb(43, 0, 255);
+        text-align: center;
+        display: inline;
+        font-style: italic;
+        justify-content: center;
+        font-weight: 200px;
+
+    }
+
+    @media only screen and (max-width: 800px) {
+
+    header { 
+        background: rgb(157, 159, 193);
+        color: rgb(20, 1, 4);
+        display: flex;
+        width: 100%;
+    }
+        
+    .santika {
+        font-size: 8px;
+        margin-top: 5px;
+        padding: 10px;
+        font-style: italic;
+        text-decoration: none;
+        cursor: default;
+        width:79;
+    }   
+
+    nav ul {
+        display: flex;
+        padding-left: 0px;
+        border: #222;
+
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    nav li a {
+        transition: all .3s ease 0s;
+        text-decoration: none ;
+        display: inline-table;
+        width: 5px;
+        text-align: center; 
+        padding: 5px;
+        color: rgb(244, 245, 247);
+        font-size: 9;
+        margin-left: 2;
+
+    }
+
+    .logo {
+        display: flex;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        cursor: pointer;
+        position: relative;
+        transition: all,1s ease 0s;
+    }
+
+    .logo-title {
+
+        margin-top:20px ;
+        font-size: 25;
+    }
+
+    .logo-img{
+        width: 50px;
+        height: 50px;
+        margin: 15px 5px 5px 5px ;
+        
+    }
+
+    .title{
+        position: relative;
+        font-size: 100px;
+        max-width: 200;
+        padding: 100;
+        font-weight: 900;
+    }
+
+    .title-1 {
+        font-size: 20;
+        font-weight: 900;
+        margin: 100 10 100 160;
+        display: inline-block;
+        background: #eaeaea;
+        border-radius: 80;
+        padding :10 10 10 10 ;
+
+    }
+
+
+    .img-foto {
+        height:0%;
+        width:5%;
+        padding-left: 200;
+    }
+
+    .container{
+        background-color: rgb(132, 143, 145);
+        width: 100%;
+        height: 600;
+        background-image: url(assets/foto/2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container1{
+        background-color: rgb(132, 143, 145);
+        width: 100%;
+        height: 3200;
+        background-image: url(assets/foto/2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container .text-box{
+        text-align: left;
+        margin-right: 400;
+        justify-content: center;
+        margin-top: 100;
+    }
+
+    .container .text-box h1 {
+        color: rgb(0, 64, 255);
+        font-style: oblique;
+        font-size: 15px;
+        font-weight: 1000;
+        text-transform: uppercase;
+        cursor: default;
+        margin-top: 250;
+        padding-right: 100;
+        padding-left: 40;
+        width: 20%;
+        text-align: center;
+
+    }
+
+    .container .text-box p{
+        color: rgb(255, 0, 0);
+        margin-left: 5;
+        cursor: default;
+        font-size: 15;
+        font-weight: 1000;
+        text-align: left;
+        margin-right: 20;
+        padding-right: 10;
+        text-align: center;
+    }
+
+    .container .text-box a {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 1;
+        padding: 8px 20px;
+        background: white;
+        color: rgb(2, 22, 237);
+        border-radius: 200px;
+        font-weight: 1000;
+        text-decoration: none;
+    }
+
+    .thumb {
+        position: absolute;
+        transform: translateY(-50%);
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 220;
+        padding-bottom: 40;
+        gap: 20px;
+    }
+
+    .thumb img{
+        max-width: 18px;
+    }
+
+    .thumb li a{
+        display: inline-block;
+        filter: invert(0);
+        margin: 5px 0;
+        transform: scale(0.8);
+    }
+
+    .parallax {
+        background-color: rgb(132, 143, 145);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200vh;
+        width: 100%;
+
+    }
+    
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        padding:100;
+    }
+
+    .card1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        padding:100;
+        margin-right: 100;
+    }
+
+    .card-item {
+        text-align: center;
+        width: 300;
+        min-height: 350;
+        background: #f7f7f7;
+        color: #222;
+        padding: 24px;
+        box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+        margin-left: 0;
+    }
+
+    .card-item1 {
+        text-align: center;
+        width: 300;
+        min-height: 350;
+        background: #f7f7f7;
+        color: #222;
+        padding: 24px;
+        box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
+        margin-left: 0;
+    }
+
+    .card-item1 a{
+        cursor: pointer;
+        background-color: rgb(21, 0, 255);
+        padding: 15px ;
+        color: wheat;
+        border-radius: 30%;
+        font-size: 15;
+        text-decoration: none;
+    }
+
+    .card-item1 a:hover{
+        color: yellow;
+        transform: translate(1%);
+        background-color: black;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .card-description {
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 500;
+        margin-bottom: 25;
+    }
+
+    .card-description1{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 20;
+        font-weight: 500;
+    }
+
+    .parallax .tentang p{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .icon{
+        height: 200 ;
+    }
+
+    .card-item a{
+        cursor: pointer;
+        background-color: rgb(21, 0, 255);
+        padding: 15px  ;
+        color: wheat;
+        border-radius: 30%;
+        font-size: 15;
+        text-decoration: none;
+        margin: 10 0 0 0;
+
+
+
+    }
+    .card-item a:hover{
+        color: yellow;
+        transform: translate(1%);
+        background-color: black;
+    }
+
+    .produk-deskripsi {
+        background-color: white;
+    }
+
+    .produk-deskripsi h1{
+        font-size: 40;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        background-color: rgb(60, 0, 255) ;
+        font-style: oblique;
+    }
+
+
+    .header-qurban {
+        font-size: 30;  
+        width: 0;
+        color: rgb(43, 0, 255);
+        text-align: center;
+        display: inline;
+        font-style: italic;
+        justify-content: center;
+        font-weight: 200px;
+
+    }
+    }
+
+
+    @media only screen and (min-width: 1200px) {
+
+    }
+
+    @media only screen and (min-width: 800x) {
+
+    }
